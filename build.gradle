@@ -1,0 +1,16 @@
+plugins {
+    id 'idea'
+    id 'eclipse'
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile 'org.openjdk.jmh:jmh-core:1.22'
+    annotationProcessor 'org.openjdk.jmh:jmh-generator-annprocess:1.22'
+}
